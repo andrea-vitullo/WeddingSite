@@ -22,54 +22,60 @@
   
   <!-- Section 1: Introduction -->
   <section id="intro">
-    <h2>Benvenuti</h2>
-    <p>Scoprite i dettagli del nostro grande giorno e preparatevi per una giornata indimenticabile!</p>
+    <div class="section-content">
+      <h2>Benvenuti</h2>
+      <p>Scoprite i dettagli del nostro grande giorno e preparatevi per una giornata indimenticabile!</p>
+    </div>
   </section>
   
   <!-- Section 2: RSVP Form -->
   <section id="rsvp">
-    <h2>RSVP</h2>
-    <form id="rsvp-form" action="https://formspree.io/f/mpwporrw" method="POST">
-      <!-- Guest Names -->
-      <label for="guest1">Nome:</label>
-      <div id="guest-list">
-        <div class="guest-field">
-          <input type="text" id="guest1" name="guest_names[]" placeholder="Nome e cognome" required>
+    <div class="section-content">
+      <h2>RSVP</h2>
+      <form id="rsvp-form" action="https://formspree.io/f/mpwporrw" method="POST">
+        <!-- Guest Names -->
+        <label for="guest1">Nome:</label>
+        <div id="guest-list">
+          <div class="guest-field">
+            <input type="text" id="guest1" name="guest_names[]" placeholder="Nome e cognome" required>
+          </div>
         </div>
-      </div>
-      <button type="button" id="add-guest"><span class="plus-icon">+</span>Aggiungi Invitato</button>
-      
-      <!-- Email -->
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="_replyto" required>
+        <button type="button" id="add-guest"><span class="plus-icon">+</span>Aggiungi Invitato</button>
+        
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required>
 
-      <!-- Attendance Options -->
-      <fieldset class="rsvp-options">
-        <legend>Parteciperai?</legend>
-        <input type="radio" id="yes" name="attendance" value="Yes" required>
-        <label for="yes">Si dai</label>
+        <!-- Attendance Options -->
+        <fieldset class="rsvp-options">
+          <legend>Parteciperai?</legend>
+          <input type="radio" id="yes" name="attendance" value="Yes" required>
+          <label for="yes">Si dai</label>
 
-        <input type="radio" id="no" name="attendance" value="No">
-        <label for="no">Assolutamente no</label>
+          <input type="radio" id="no" name="attendance" value="No">
+          <label for="no">Assolutamente no</label>
 
-        <input type="radio" id="maybe" name="attendance" value="Maybe">
-        <label for="maybe">Te lo faccio sapere all'ultimo</label>
-      </fieldset>
+          <input type="radio" id="maybe" name="attendance" value="Maybe">
+          <label for="maybe">Te lo faccio sapere all'ultimo</label>
+        </fieldset>
 
-      <!-- Dietary Requirements -->
-      <label for="diet">Non mangio...cosa?:</label>
-      <textarea id="diet" name="diet" placeholder="Hai allergie? Sei vegano? Vegetariano? Bevi solo frullati? Come ci vuoi rompere i coglioni?"></textarea>
+        <!-- Dietary Requirements -->
+        <label for="diet">Non mangio...cosa?:</label>
+        <textarea id="diet" name="diet" placeholder="Hai allergie? Sei vegano? Vegetariano? Bevi solo frullati? Come ci vuoi rompere i coglioni?"></textarea>
 
-      <!-- Submit Button -->
-      <button type="submit">Invia RSVP</button>
-    </form>
-    <div id="message"></div>
+        <!-- Submit Button -->
+        <button type="submit">Invia RSVP</button>
+      </form>
+      <div id="message"></div>
+    </div>
   </section>
   
   <!-- Section 3: Additional Details -->
   <section id="details">
-    <h2>Dettagli del Giorno</h2>
-    <p>Qui trovate tutte le informazioni utili riguardo il luogo, l'orario e altre sorprese che abbiamo in serbo per voi.</p>
+    <div class="section-content">
+      <h2>Dettagli del Giorno</h2>
+      <p>Qui trovate tutte le informazioni utili riguardo il luogo, l'orario e altre sorprese che abbiamo in serbo per voi.</p>
+    </div>
   </section>
   
   <!-- Footer -->

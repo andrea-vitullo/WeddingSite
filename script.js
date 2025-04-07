@@ -11,9 +11,3 @@ document.getElementById('add-guest').addEventListener('click', function() {
     guestList.appendChild(newField);
   });
   
-//   // Optional: Additional form submission handling or validation can go here.
-//   document.getElementById('rsvp-form').addEventListener('submit', function(event) {
-//     const messageDiv = document.getElementById('message');
-//     messageDiv.textContent = 'Grazie eh!';
-//   });
-  

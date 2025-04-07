@@ -8,15 +8,15 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: #f5f1e9; /* Light background accent */
+    background: #f4f3f2; /* Light background accent */
     color: #28241d;
     padding: 20px;
   }
   
   /* Full-screen Hero Banner Header */
   header.hero-banner {
-    /* Banner image commented out */
-    background: url('./Pics/banner.jpg') no-repeat center center;
+    /* Banner image commented out for now */
+    background: url('./Pics/banner.svg') no-repeat center center;
     background-size: 100%;
     height: 95vh;
     border-radius: 2px;
@@ -36,9 +36,6 @@
     text-align: center;
     padding: 2rem;
     background: rgba(252, 245, 234, 0.1); /* Semi-transparent background */
-    /* border: 2px solid #c7b59c; */
-    /* border-radius: 20px; */
-    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
     max-width: 90%;
   }
   
@@ -58,14 +55,17 @@
     font-size: 10rem;
     color: #28241d;
   }
-
+  
+  /* Style for hr */
   hr {
-    color: #c7b59c;
+    border: 0;
+    border-top: 2px solid #c7b59c;
+    margin: 1rem auto;
+    width: 80%;
   }
   
-  /* Section styling */
-/* Continuous sections styling */
-section {
+  /* Continuous sections styling */
+  section {
     width: 100%;
     padding: 60px 20px;
   }
@@ -215,3 +215,63 @@ section {
     border-radius: 4px;
     margin-top: 30px;
   }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    /* Reduce header height */
+    header.hero-banner {
+      height: 70vh;
+      padding: 10px;
+    }
+    
+    /* Adjust hero content padding and font sizes */
+    .hero-content {
+      padding: 1rem;
+      max-width: 95%;
+    }
+    
+    .cinzel-bold {
+      font-size: 2.5rem;
+    }
+    
+    .corinthia-regular {
+      font-size: 4rem;
+    }
+    
+    hr {
+      width: 90%;
+      margin: 0.5rem auto;
+    }
+    
+    /* Section padding adjustments */
+    section {
+      padding: 40px 10px;
+    }
+    
+    section h2 {
+      font-size: 1.5rem;
+    }
+    
+    .section-content {
+      padding: 0 10px;
+    }
+    
+    /* Form adjustments */
+    form {
+      max-width: 100%;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+    
+    button[type="submit"],
+    #add-guest {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+  }
+  
