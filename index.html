@@ -11,6 +11,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Burger Icon (always visible in top-right) -->
+  <a href="#" class="burger"><span></span></a>
+  
+  <!-- Menu Overlay (hidden by default) -->
+  <div class="menu-overlay">
+    <ul class="menu-links">
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#rsvp">RSVP</a></li>
+      <li><a href="#details">Dettagli</a></li>
+      <li><a href="#footer">Contatti</a></li>
+    </ul>
+  </div>
+  
   <!-- Full-screen Hero Banner Header -->
   <header class="hero-banner">
     <div class="hero-content">
@@ -45,24 +58,21 @@
         <!-- Email -->
         <label for="email">Email:</label>
         <input type="email" id="email" name="_replyto" required>
-
+  
         <!-- Attendance Options -->
         <fieldset class="rsvp-options">
           <legend>Parteciperai?</legend>
           <input type="radio" id="yes" name="attendance" value="Yes" required>
           <label for="yes">Si dai</label>
-
+  
           <input type="radio" id="no" name="attendance" value="No">
           <label for="no">Assolutamente no</label>
-
-          <input type="radio" id="maybe" name="attendance" value="Maybe">
-          <label for="maybe">Te lo faccio sapere all'ultimo</label>
         </fieldset>
-
+  
         <!-- Dietary Requirements -->
         <label for="diet">Non mangio...cosa?:</label>
         <textarea id="diet" name="diet" placeholder="Hai allergie? Sei vegano? Vegetariano? Bevi solo frullati? Come ci vuoi rompere i coglioni?"></textarea>
-
+  
         <!-- Submit Button -->
         <button type="submit">Invia RSVP</button>
       </form>
@@ -79,7 +89,7 @@
   </section>
   
   <!-- Footer -->
-  <footer>
+  <footer id="footer">
     <p>&copy; 2025 Il Nostro Matrimonio. Tutti i diritti riservati.</p>
   </footer>
   

@@ -13,6 +13,97 @@
     padding: 20px;
   }
   
+  /* Burger Icon Styling */
+.burger {
+    position: fixed;
+    top: 60px;
+    right: 60px;
+    cursor: pointer;
+    z-index: 1100;
+    padding: 12px 0;
+  }
+  
+  .burger span {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 4px;
+    background: #28241d;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .burger span:before,
+  .burger span:after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    background: #28241d;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .burger span:before {
+    top: -8px;
+  }
+  
+  .burger span:after {
+    top: 8px;
+  }
+  
+  .burger.active span {
+    background: transparent;
+  }
+  
+  .burger.active span:before {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+  
+  .burger.active span:after {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
+  
+  /* Menu Overlay Styling */
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(245, 241, 233, 0.95); /* semi-transparent */
+    overflow: hidden;
+    z-index: 1050;
+    transition: width 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu-overlay.active {
+    width: 100%;
+  }
+  
+  .menu-links {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .menu-links li {
+    margin: 20px 0;
+  }
+  
+  .menu-links li a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #28241d;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-links li a:hover {
+    color: #c7b59c;
+  }
+
   /* Full-screen Hero Banner Header */
   header.hero-banner {
     /* Banner image commented out for now */
@@ -272,6 +363,21 @@
     #add-guest {
       padding: 8px 12px;
       font-size: 0.9rem;
+    }
+
+      /* Adjust burger icon on smaller screens */
+    .burger {
+        top: 30px;
+        right: 30px;
+    }
+    
+    .burger span {
+        width: 25px;
+        height: 4px;
+    }
+    
+    .menu-overlay.active {
+        width: 100%; /* Full screen on mobile */
     }
   }
   
