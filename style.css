@@ -13,6 +13,7 @@
     padding: 20px;
   }
   
+  /* Header styling */
   header {
     text-align: center;
     margin-bottom: 30px;
@@ -31,15 +32,23 @@
     font-size: 1.1rem;
   }
   
-  main {
+  /* Section styling */
+  section {
     max-width: 600px;
     margin: 30px auto;
     background: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
   }
   
+  section h2 {
+    color: #328E6E;
+    margin-bottom: 10px;
+  }
+  
+  /* RSVP Form styling */
   form {
     display: flex;
     flex-direction: column;
@@ -149,4 +158,14 @@
   button[type="submit"]:hover {
     background: #90C67C;
   }
-     
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #328E6E;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 30px;
+  }
+      
