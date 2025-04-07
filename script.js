@@ -11,9 +11,34 @@ document.getElementById('add-guest').addEventListener('click', function() {
     guestList.appendChild(newField);
   });
   
-//   // Optional: Additional form submission handling or validation can go here.
-//   document.getElementById('rsvp-form').addEventListener('submit', function(event) {
-//     const messageDiv = document.getElementById('message');
-//     messageDiv.textContent = 'Grazie eh!';
-//   });
+
+
+(function () {
+const second = 1000,
+    minute = second * 60,
+    hour = minute * 60,
+    day = hour * 24;
+
+// Set wedding date to August 30, 2025
+const weddingDate = new Date("August 30, 2025 00:00:00").getTime();
+
+const x = setInterval(function() {
+    const now = new Date().getTime(),
+        distance = weddingDate - now;
+    
+    document.getElementById("days").innerText = Math.floor(distance / day);
+    document.getElementById("hours").innerText = Math.floor((distance % day) / hour);
+    document.getElementById("minutes").innerText = Math.floor((distance % hour) / minute);
+    document.getElementById("seconds").innerText = Math.floor((distance % minute) / second);
+
+    // When the countdown is finished, update the headline and reveal content
+    if (distance < 0) {
+    document.getElementById("headline").innerText = "È il nostro giorno!";
+    document.getElementById("countdown").style.display = "none";
+    document.getElementById("content").style.display = "block";
+    clearInterval(x);
+    }
+}, 1000);
+}());
+  
   
