@@ -216,6 +216,7 @@ form {
   max-width: 600px;
   margin: 0 auto;
   text-align: left;
+  
 }
 
 label {
@@ -270,7 +271,7 @@ textarea {
 fieldset {
   margin-top: 10px;
   border: 1px solid var(--color-primary);
-  padding: 10px;
+  padding: 15px;
   border-radius: 4px;
 }
 
@@ -284,6 +285,8 @@ legend {
 }
 
 .rsvp-options label {
+  display: flex;
+  justify-content: center;
   margin-right: 10px;
   padding: 10px 15px;
   border: 1px solid var(--color-primary);
@@ -309,9 +312,9 @@ legend {
 button[type="submit"] {
   margin-top: 20px;
   padding: 10px;
-  background: var(--color-primary);
-  color: var(--color-bg-alt-even);
-  border: none;
+  background: var(--color-bg-alt-even);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
   border-radius: 4px;
   cursor: pointer;
   font-size: 1rem;
@@ -320,6 +323,8 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-bg-alt-even);
 }
 
 /* Footer styling */

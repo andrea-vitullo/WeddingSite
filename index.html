@@ -17,10 +17,10 @@
   <!-- Menu Overlay (hidden by default) -->
   <div class="menu-overlay">
     <ul class="menu-links">
-      <li><a href="#intro">Intro</a></li>
-      <li><a href="#rsvp">RSVP</a></li>
+      <li><a href="#intro">Benvenuti</a></li>
       <li><a href="#details">Dettagli</a></li>
-      <li><a href="#footer">Contatti</a></li>
+      <li><a href="#rsvp">RSVP</a></li>
+      <li><a href="#un-pensiero">Un Pensiero</a></li>
     </ul>
   </div>
   
@@ -85,7 +85,7 @@
   <!-- Section 3: RSVP Form -->
   <section id="rsvp">
     <div class="section-content">
-      <h2>RSVP</h2>
+      <h2 class="cinzel-regular">RSVP</h2>
       <form id="rsvp-form" action="https://formspree.io/f/mpwporrw" method="POST">
         <!-- Guest Names -->
         <label for="guest1">Nome:</label>
@@ -95,35 +95,75 @@
           </div>
         </div>
         <button type="button" id="add-guest"><span class="plus-icon">+</span>Aggiungi Invitato</button>
+        <br>
         
         <!-- Email -->
         <label for="email">Email:</label>
-        <input type="email" id="email" name="_replyto" required>
+        <input type="email" id="email" name="_replyto" placeholder="Indirizzo Email" required>
+        <br>
   
         <!-- Attendance Options -->
         <fieldset class="rsvp-options">
           <legend>Parteciperai?</legend>
           <input type="radio" id="yes" name="attendance" value="Yes" required>
-          <label for="yes">Si dai</label>
+          <label for="yes">Certo Che Si</label>
   
           <input type="radio" id="no" name="attendance" value="No">
-          <label for="no">Assolutamente no</label>
+          <label for="no">Purtroppo No</label>
         </fieldset>
+        <br>
+
+        <!-- Attendance Options -->
+        <fieldset class="rsvp-options">
+          <legend>Usufruirai del Servizio Navetta?</legend>
+          <input type="radio" id="yes" name="navetta" value="Yes" required>
+          <label for="yes">Si</label>
+  
+          <input type="radio" id="no" name="navetta" value="No">
+          <label for="no">No</label>
+        </fieldset>
+        <br>
   
         <!-- Dietary Requirements -->
         <label for="diet">Non mangio...cosa?:</label>
-        <textarea id="diet" name="diet" placeholder="Hai allergie? Sei vegano? Vegetariano? Bevi solo frullati? Come ci vuoi rompere i coglioni?"></textarea>
+        <textarea id="diet" name="diet" placeholder="Allergie, intolleranze ed altre esigenze alimentari..."></textarea>
+        <br>
+
+        <label for="song">Quale canzone pensi non possa mancare?:</label>
+        <textarea id="song" name="song" placeholder="Una canzone a cui tieni..."></textarea>
+        <br>
   
         <!-- Submit Button -->
-        <button type="submit">Invia RSVP</button>
+        <button type="submit" id="submit"><strong>Invia RSVP</strong></button>
       </form>
       <div id="message"></div>
+  </section>
+
+  <!-- Section 4: IBAN -->
+  <section id="un-pensiero">
+    <div class="section-content">
+      <hr>
+      <br>
+      <p class="cormorant-regular">
+        Sognavamo di farvi scegliere tra frullatori e tostapane, 
+        ma visti i 3000 km che ci separano, abbiamo pensato che, per chi volesse, 
+        contribuire al nostro viaggio di nozze fosse un'idea più avventurosa! Ecco il nostro IBAN:
+      </p>
+      <br>
+      <h3 class="cinzel-h3">Andrea Vitullo e Paola Ilfo</h3>
+      <h3 class="cinzel-h3">GB44 REVO 0099 7078 1564 52</h3>
+      <h3 class="cinzel-h3"><strong>Swift</strong>: REVOGB21</h3>
+      <br>
+      <h3 class="cinzel-h3">Revolut Ltd,<br> 
+        7, Westferry Circus,<br>
+      E14 4HD, London, United Kingdom</h3>
+      <br>
     </div>
   </section>
   
   <!-- Footer -->
   <footer id="footer">
-    <p>&copy; 2025 Il Nostro Matrimonio. Tutti i diritti riservati.</p>
+    <p>&copy; 2025 Paola & Andrea.</p>
   </footer>
   
   <script src="script.js"></script>
