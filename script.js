@@ -21,3 +21,10 @@ document.getElementById('add-guest').addEventListener('click', function() {
     menuOverlay.classList.toggle('active');
   });
   
+  document.querySelectorAll('.menu-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      burger.classList.remove('active');
+      menuOverlay.classList.remove('active');
+    });
+  });
+  
