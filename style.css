@@ -176,12 +176,24 @@ header.hero-banner {
   color: var(--color-text);
 }
 
+.corinthia-banner {
+  font-family: 'Corinthia', cursive;
+  font-weight: 400;
+  font-size: 6rem;
+  margin: -4rem;
+  color: var(--color-text);
+}
+
 /* Style for hr */
 hr {
   border: 0;
   border-top: 2px solid var(--color-primary);
   margin: 1rem auto;
   width: 80%;
+}
+
+.hr-banner {
+  margin-bottom: 4rem;
 }
 
 /* Continuous sections styling */
@@ -402,9 +414,19 @@ footer {
     font-size: 3rem;
   }
 
+  .corinthia-banner {
+    font-size: 3rem;
+    margin: -2.4rem;
+  }
+
   hr {
     width: 90%;
-    margin: 0.5rem auto;
+    margin: 1.5rem auto;
+  }
+
+  .hr-banner {
+    margin-top: -0.5rem;
+    margin-bottom: 3rem;
   }
 
   section {
