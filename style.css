@@ -120,13 +120,13 @@ body {
 /* Full-screen Hero Banner Header */
 header.hero-banner {
   background: url('./Pics/banner.svg') no-repeat center center;
-  background-size: 95%;
+  background-size: 110%;
   height: 60vh;
   border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 4px solid var(--color-primary);
+  border: 2px solid var(--color-primary);
 }
 
 .hero-content {
