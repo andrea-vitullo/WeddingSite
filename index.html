@@ -21,6 +21,7 @@
       <li><a href="#details">Dettagli</a></li>
       <li><a href="#rsvp">RSVP</a></li>
       <li><a href="#un-pensiero">Un Pensiero</a></li>
+      <li><a href="#contacts">Contatti</a></li>
     </ul>
   </div>
   
@@ -45,7 +46,7 @@
         Benvenuti sul sito dedicato al nostro matrimonio!<br>
         Siamo entusiasti di condividere con voi i dettagli del nostro giorno.<br>
         Abbiamo creato questo spazio per offrirvi tutte le informazioni necessarie affinché possiate unirvi a noi nella celebrazione di questo giorno importante.<br>
-        Non vediamo l’ora di festeggiare insieme a voi e di creare ricordi speciali che dureranno per sempre.
+        <!-- Non vediamo l’ora di festeggiare insieme a voi e di creare ricordi speciali che dureranno per sempre. -->
       </p>
     </div>
   </section>
@@ -88,11 +89,11 @@
       <br>
 
       <p class="cormorant-regular">
-        Vi preghiamo di confermare la vostra partecipazione e l'utilizzo del servizio navetta attraverso il modulo RSVP 
-        disponibile di seguito entro il 31 Luglio.<br><br>
+        Vi preghiamo di confermare la vostra partecipazione e l'utilizzo del servizio navetta <strong>entro il 31 Luglio</strong>, utilizzando il modulo RSVP 
+        disponibile di seguito.<br><br>
         
         
-        Non vediamo l'ora di festeggiare questo giorno speciale con voi, creando ricordi preziosi e indimenticabili.<br><br>
+        Non vediamo l'ora di festeggiare con voi questo giorno speciale, creando ricordi preziosi e indimenticabili.<br><br>
         
         Con affetto,<br>
         Paola e Andrea</p>
@@ -105,7 +106,7 @@
       <h2 class="cinzel-regular">RSVP</h2>
       <form id="rsvp-form" action="https://formspree.io/f/mpwporrw" method="POST">
         <!-- Guest Names -->
-        <label for="guest1">Nome:</label>
+        <label for="guest1">Nome (bambini inclusi):</label>
         <div id="guest-list">
           <div class="guest-field">
             <input type="text" id="guest1" name="guest_names[]" placeholder="Nome e cognome" required>
@@ -115,15 +116,15 @@
         <br>
         
         <!-- Email -->
-        <label for="email">Email:</label>
+        <!-- <label for="email">Email:</label>
         <input type="email" id="email" name="_replyto" placeholder="Indirizzo Email" required>
-        <br>
+        <br> -->
   
         <!-- Attendance Options -->
         <fieldset class="rsvp-options">
           <legend>Parteciperai?</legend>
           <input type="radio" id="attend_yes" name="attendance" value="Yes" required>
-          <label for="attend_yes">Certo Che Sì</label>
+          <label for="attend_yes">Ovviamente Sì</label>
 
           <input type="radio" id="attend_no" name="attendance" value="No">
           <label for="attend_no">Purtroppo No</label>
@@ -162,9 +163,11 @@
       <hr>
       <br>
       <p class="cormorant-regular">
-        Sognavamo di farvi scegliere tra frullatori e tostapane, 
-        ma visti i 3000 km che ci separano, abbiamo pensato che, per chi volesse, 
-        contribuire al nostro viaggio di nozze fosse un'idea più avventurosa! Ecco il nostro IBAN:
+        Pensavamo di farvi scegliere tra lampade e bicchieri 
+        ma, vista la lontananza, abbiamo pensato che 
+        contribuire al nostro viaggio di nozze fosse un'idea più avventurosa! 
+        <br>
+        Ecco il nostro IBAN:
       </p>
       <br>
       <h3 class="cinzel-h3">Andrea Vitullo e Paola Ilfo</h3>
@@ -172,10 +175,24 @@
       <h3 class="cinzel-h3"><strong>Swift</strong>: REVOGB21</h3>
     </div>
   </section>
+
+    <!-- Section 5: Contacts -->
+    <section id="contacts">
+      <div class="section-content">
+        <h3 class="cinzel-h3">Paola Ilfo</h3> 
+        <br>
+        <p class="cormorant-regular">Tel: +44 7465971596 -  Email: paola.ilfo@gmail.com</p>
+        <br>
+        <br>
+        <h3 class="cinzel-h3">Andrea Vitullo</h3>
+        <br>
+        <p class="cormorant-regular">Tel: +44 7471511576 - Email: andrea.vitullo27@gmail.com</p>
+      </div>
+    </section>
   
   <!-- Footer -->
   <footer id="footer">
-    <p>&copy; 2025 Paola & Andrea.</p>
+    <p>Paola & Andrea</p>
   </footer>
   
   <script src="script.js"></script>
